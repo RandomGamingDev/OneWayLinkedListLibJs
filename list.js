@@ -53,7 +53,7 @@ class LinkedList {
   
   erase_head() {
     this.length--;
-    if (length == 1) {
+    if (length == 0) {
       this.head = new LinkedNode();
       this.tail = this.head;
       return;
