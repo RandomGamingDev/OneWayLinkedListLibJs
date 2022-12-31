@@ -28,12 +28,14 @@ class LinkedList {
   }
   
   insert_head(data) {
+    this.length++;
     let oldHead = this.head;
     this.head = new LinkedNode(data);
     this.head.next = oldHead;
   }
   
   insert(node, data) {
+    this.length++;
     let next = node.next;
     node.next = new LinkedNode(data);
     node.next.next = next;
