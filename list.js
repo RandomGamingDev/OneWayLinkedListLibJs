@@ -69,6 +69,7 @@ class LinkedList {
   }
   
   clear() {
+    this.length = 0;
     this.head = new LinkedNode();
     this.tail = this.head;
   }
