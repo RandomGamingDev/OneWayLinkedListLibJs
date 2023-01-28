@@ -10,7 +10,7 @@ LinkedList.Node = class {
   }
 }
 
-LinkedList.List {
+LinkedList.List = class {
   constructor() {
     this.head = new LinkedNode();
     this.tail = this.head;
