@@ -1,5 +1,5 @@
-let LinkedList = {}
-LinkedList.Node = class {
+let Linked = {}
+Linked.Node = class {
   constructor(data = null, next = null) {
     this.data = data;
     this.next = next;              
@@ -10,9 +10,9 @@ LinkedList.Node = class {
   }
 }
 
-LinkedList.List = class {
+Linked.List = class {
   constructor() {
-    this.head = new LinkedNode();
+    this.head = new Linked.Node();
     this.tail = this.head;
     this.length = 0;
   }
@@ -20,25 +20,25 @@ LinkedList.List = class {
   push(data) {
     this.length++;
     if (this.length == 1) {
-      this.head = new LinkedNode(data);
+      this.head = new Linked.Node(data);
       this.tail = this.head;
       return;
     }
-    this.tail.next = new LinkedNode(data);
+    this.tail.next = new Linked.Node(data);
     this.tail = this.tail.next;
   }
   
   insert_head(data) {
     this.length++;
     let oldHead = this.head;
-    this.head = new LinkedNode(data);
+    this.head = new Linked.Node(data);
     this.head.next = oldHead;
   }
   
   insert(node, data) {
     this.length++;
     let next = node.next;
-    node.next = new LinkedNode(data);
+    node.next = new Linked.Node(data);
     node.next.next = next;
   }
   
@@ -55,7 +55,7 @@ LinkedList.List = class {
   erase_head() {
     this.length--;
     if (length == 0) {
-      this.head = new LinkedNode();
+      this.head = new Linked.Node();
       this.tail = this.head;
       return;
     }
@@ -71,7 +71,7 @@ LinkedList.List = class {
   
   clear() {
     this.length = 0;
-    this.head = new LinkedNode();
+    this.head = new Linked.Node();
     this.tail = this.head;
   }
 }
