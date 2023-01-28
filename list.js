@@ -6,7 +6,7 @@ Linked.Node = class {
   }
   
   clone() {
-    return new LinkedListNode(this.data, this.next);
+    return new Linked.Node(this.data, this.next);
   }
 }
 
