@@ -1,4 +1,5 @@
-class LinkedNode {
+let LinkedList = {}
+LinkedList.Node = class {
   constructor(data = null, next = null) {
     this.data = data
     this.next = null                
@@ -9,7 +10,7 @@ class LinkedNode {
   }
 }
 
-class LinkedList {
+LinkedList.List {
   constructor() {
     this.head = new LinkedNode();
     this.tail = this.head;
