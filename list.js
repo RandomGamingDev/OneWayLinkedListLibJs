@@ -1,4 +1,5 @@
 let Linked = {}
+
 Linked.Node = class {
   constructor(data = null, next = null) {
     this.data = data;
