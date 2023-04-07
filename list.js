@@ -77,10 +77,10 @@ Linked.List = class {
   }
   
   	
-	ind(i) {
-		let toReturn = this.head;
-		for (; i > 0; i--)
-			toReturn = toReturn.next;
-		return toReturn;
-	}
+  ind(i) {
+    let toReturn = this.head;
+    for (; i > 0; i--)
+      toReturn = toReturn.next;
+    return toReturn;
+  }
 }
