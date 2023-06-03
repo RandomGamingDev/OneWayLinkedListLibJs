@@ -13,7 +13,7 @@ Linked.Node = class {
 
 Linked.List = class {
   constructor() {
-    this.head = new Linked.Node();
+    this.head = null;
     this.tail = this.head;
     this.length = 0;
   }
