@@ -1,4 +1,4 @@
-# OneWayLinkedListLib
+# OneWayLinkedListLibJs
 
 A simple one way linked list that stores the head, tail and length of the list
 
