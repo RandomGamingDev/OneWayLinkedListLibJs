@@ -1,6 +1,6 @@
 {
   "name": "one-way-linked-list",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A simple one way linked list that stores the head, tail and length of the list",
   "main": "list.js",
   "scripts": {
