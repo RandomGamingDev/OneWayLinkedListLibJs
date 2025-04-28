@@ -27,12 +27,12 @@ colors = new_list;
 ```
 As you can see, the performance difference is a lot less compared to the linked list against list insertion, and it relies on a lot of data that we're only able to assume because of how specific this case is while resulting in code that's a lot less clean.
 
-## How to import NPM
+## How to import via NPM
 ```
 npm i one-way-linked-list
 ```
 
-## How to import CDN (Content Distribution Network)
+## How to import via CDN (Content Distribution Network)
 
 To use it you can simply include https://cdn.jsdelivr.net/gh/RandomGamingDev/OneWayLinkedListLibJs/list.js
 in your HTML file! If you want to you can also just download the file and include it in your HTML file that way.
